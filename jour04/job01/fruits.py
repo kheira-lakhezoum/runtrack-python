@@ -1,6 +1,6 @@
-def liste_fruits():
-    fruits = ["pomme", "cerise", "orange"]
-    return fruits
+def liste_fruit():
+    fruit = ["pomme", "cerise", "orange"]
+    return fruit
 
-resultat = liste_fruits()
+resultat = liste_fruit()
 print(resultat)
