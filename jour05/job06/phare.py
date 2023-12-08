@@ -1,14 +1,12 @@
-# Un gardien de phare va aux toilettes cinq fois par jour. Or les WC sont au
-# rez-de-chaussée...
+marches=50
+hauteur=10
+resultat=0 
 
-# Écrire une fonction qui reçoit en paramètres, le nombre de marches du
-# phare et la hauteur de chaque marche (en cm), cette fonction doit calculer
-# combien de mètre le gardien effectué par semaine pour aller aux toilettes.
-# La sortie du code doit être :
+def distance(x, y):
 
-# Pour x marches de y cm, le gardien parcourt z.zz m par semaine.
+    z = x * (y / 100) * 7 * 5 * 2
+    return z
 
-# On n'oubliera pas :
-# ➔ Qu’une semaine comporte 7 jours ;
-# ➔ Qu’une fois en bas, le gardien doit remonter ;
-# ➔ Que le résultat est à exprimer en m.
+resultat = distance(marches, hauteur)
+
+print(f"Pour {marches} marches de {hauteur} cm, le gardien parcour {resultat} metres par semaine")
